@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "beeAppLibrary", "beeAppLibrary.csproj", "{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeApp", "..\BeeApp\BeeApp.csproj", "{31674D6F-81FB-41D2-9DCC-07235C1C545B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31674D6F-81FB-41D2-9DCC-07235C1C545B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31674D6F-81FB-41D2-9DCC-07235C1C545B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31674D6F-81FB-41D2-9DCC-07235C1C545B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31674D6F-81FB-41D2-9DCC-07235C1C545B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99C29038-8498-4A0B-B6F0-083C8591C962}
+	EndGlobalSection
+EndGlobal
