@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    public class ForagerBee:WorkingClassBee
+    public class ForagerBee : WorkingClassBee
     {
+        public ForagerBee(string id) : base(id)
+        {
+        }
     }
 }

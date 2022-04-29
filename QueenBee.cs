@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    public class QueenBee: HoneyBee
+    public class QueenBee : HoneyBee
     {
+        public QueenBee(string id) : base(id)
+        {
+            
+        }
     }
 }

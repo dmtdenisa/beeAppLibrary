@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    public abstract class WorkingClassBee: HoneyBee
+    public abstract class WorkingClassBee : HoneyBee
     {
+        protected WorkingClassBee(string id) : base(id)
+        {
+        }
     }
 }

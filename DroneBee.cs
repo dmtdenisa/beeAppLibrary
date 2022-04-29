@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    public class DroneBee: HoneyBee
+    public class DroneBee : HoneyBee
     {
-        public DroneBee(string id)
+        public DroneBee(string id) : base(id)
         {
-            ID = id;
+            
         }
-
-        
     }
 }
