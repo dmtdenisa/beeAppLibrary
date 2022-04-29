@@ -12,5 +12,9 @@ namespace beeAppLibrary
         {
             
         }
+
+        public DroneBee(DroneBee bee) : base(bee)
+        {
+        }
     }
 }
