@@ -6,15 +6,31 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    public abstract class HoneyBee : Bee
+    public abstract class HoneyBee : IBee
     {
-        private string _ID;
+        private string id;
+        public string ID { 
+            get => id; 
+            set
+            {
+                id = value;
+            } 
+        }
 
-        public string ID { get => _ID; set => _ID = value; }
-        public uint Age { get => _age; set => _age = value; }
-
-        private uint _age =1;
+        private uint age = 1;
+        public uint Age { get => age; set => age = value; }
         
+        private static List<string> roles;
+        public static List<string> Roles
+        {
+            get
+            {
+                return roles;
+            }
+        }
+
+
+
         public HoneyBee(string id)
         {
             ID = id;
@@ -26,14 +42,53 @@ namespace beeAppLibrary
             ID = bee.ID;
             Age = bee.Age;
         }
-        public string showAllInfo()
+
+        public override string ToString()
         {
-            return ID;
+            return $"Bee id: {ID}, role: {showType()}, age: {Age}";
         }
 
-        public string showRole()
+        public string showType()
         {
             return GetType().Name;
+        }
+
+        public static string DoWork(HoneyBee bee)
+        {
+            string work= $"{bee.showType()} {bee.ID} is:\n";
+            List<string> workload = HoneyBee.getRoles(bee);
+            foreach(string action in workload)
+            {
+                work += $"\t{action}...\n";
+            }
+            work += $"{bee.showType()} {bee.ID} has fulfilled its tasks!\n";
+            return work;
+        }
+
+        public static List<string> getRoles(HoneyBee bee)
+        {
+            List<string> output = new List<string>() { "No roles assignet yet" };
+            switch (bee.GetType().Name)
+            {
+                case "WorkingClass":
+                case "HoneyBee":
+                    break;
+                case "DroneBee":
+                    output = DroneBee.Roles;
+                    break;
+                case "HiveBee":
+                    output = HiveBee.Roles;
+                    break;
+                case "ForagerBee":
+                    output = ForagerBee.Roles;
+                    break;
+                case "QueenBee":
+                    output = QueenBee.Roles;
+                    break;
+                
+            }
+            return output;
+
         }
     }
 }

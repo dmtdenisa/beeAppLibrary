@@ -11,7 +11,7 @@ namespace beeAppLibrary
     {
         public static DateTime _dateOfCreation;
         private uint _stressLevel { get; set; }
-        public readonly uint maxStressLevel = 100;
+        public const uint maxStressLevel = 100;
         public int NumberOfInhabitants { get => _inhabitants.Count(); private set => numberOfInhabitants = value; }
 
         public BeeColony _inhabitants;

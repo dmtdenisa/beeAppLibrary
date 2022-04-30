@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bee.cs" />
+    <Compile Include="IBee.cs" />
     <Compile Include="BeeColony.cs" />
     <Compile Include="DroneBee.cs" />
     <Compile Include="ForagerBee.cs" />

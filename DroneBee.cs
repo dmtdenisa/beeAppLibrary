@@ -8,6 +8,14 @@ namespace beeAppLibrary
 {
     public class DroneBee : HoneyBee
     {
+        private static readonly List<string> roles = new List<string>() {"Mating"};
+        public static new List<string> Roles
+        {
+            get
+            {
+                return roles;
+            }
+        }
         public DroneBee(string id) : base(id)
         {
             

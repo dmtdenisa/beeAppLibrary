@@ -8,6 +8,19 @@ namespace beeAppLibrary
 {
     public class ForagerBee : WorkingClassBee
     {
+        private static readonly List<string> roles = new List<string>() {
+            "Collecting nectar and pollen",
+            "Collecting propolis",
+            "Collecting water",
+            "Guarding the hive",
+        };
+        public static new List<string> Roles
+        {
+            get
+            {
+                return roles;
+            }
+        }
         public ForagerBee(string id) : base(id)
         {
         }

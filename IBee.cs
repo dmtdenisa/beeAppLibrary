@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace beeAppLibrary
 {
-    interface Bee
+    interface IBee
     {
-        string showAllInfo();
-        string showRole();
         
+        string showType();
+        
+
+
     }
 }
