@@ -8,6 +8,7 @@ namespace beeAppLibrary
 {
     public abstract class HoneyBee : IBee
     {
+        public DateTime dateOfBirth;
         private string id;
         public string ID { 
             get => id; 
@@ -38,13 +39,14 @@ namespace beeAppLibrary
         public HoneyBee(string id)
         {
             ID = id;
-            
+            dateOfBirth = DateTime.Now;
         }
 
         public HoneyBee(HoneyBee bee)
         {
             ID = bee.ID;
             Age = bee.Age;
+            dateOfBirth = DateTime.Now;
         }
 
         public override string ToString()
@@ -57,7 +59,7 @@ namespace beeAppLibrary
             return GetType().Name;
         }
 
-        public string DoWork()
+        public virtual string DoWork()
         {
             string work= $"{showType()} {ID} is:\n";
             List<string> workload = HoneyBee.getRoles(this);

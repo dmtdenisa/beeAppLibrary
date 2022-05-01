@@ -33,5 +33,10 @@ namespace beeAppLibrary
             };
             return transformedBee;
         }
+
+        public override string DoWork()
+        {
+            return $"{base.DoWork()}Looks like {ID} brought some resources!\n";
+        }
     }
 }

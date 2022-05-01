@@ -36,5 +36,10 @@ namespace beeAppLibrary
             };
             return transformedBee;
         }
+
+        public override string DoWork()
+        {
+            return $"{base.DoWork()}Hive stress has been reduced and the bees seem happier!\n";
+        }
     }
 }

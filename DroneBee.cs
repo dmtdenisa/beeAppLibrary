@@ -28,5 +28,10 @@ namespace beeAppLibrary
         public DroneBee(DroneBee bee) : base(bee)
         {
         }
+
+        public override string DoWork()
+        {
+            return $"{base.DoWork()}This bee can now rest!\n";
+        }
     }
 }

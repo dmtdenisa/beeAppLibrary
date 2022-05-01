@@ -22,6 +22,9 @@ namespace beeAppLibrary
             
         }
 
-        
+        public override string DoWork()
+        {
+            return $"{base.DoWork()}The bees seem much happier!\n";
+        }
     }
 }
