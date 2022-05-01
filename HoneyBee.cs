@@ -29,6 +29,10 @@ namespace beeAppLibrary
             }
         }
 
+        public static int StressLevel { get => stressLevel; set => stressLevel = value; }
+
+        private static int stressLevel = 1;
+
 
 
         public HoneyBee(string id)
@@ -53,15 +57,15 @@ namespace beeAppLibrary
             return GetType().Name;
         }
 
-        public static string DoWork(HoneyBee bee)
+        public string DoWork()
         {
-            string work= $"{bee.showType()} {bee.ID} is:\n";
-            List<string> workload = HoneyBee.getRoles(bee);
+            string work= $"{showType()} {ID} is:\n";
+            List<string> workload = HoneyBee.getRoles(this);
             foreach(string action in workload)
             {
-                work += $"\t{action}...\n";
+                work += $"  {action}...\n";
             }
-            work += $"{bee.showType()} {bee.ID} has fulfilled its tasks!\n";
+            work += $"{showType()} {ID} has fulfilled its tasks!\n";
             return work;
         }
 

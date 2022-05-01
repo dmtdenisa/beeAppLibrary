@@ -8,6 +8,7 @@ namespace beeAppLibrary
 {
     public class HiveBee : WorkingClassBee
     {
+        
         private static readonly List<string> roles = new List<string>() {
             "Nursing larvae",
             "Attending the queen",

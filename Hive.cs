@@ -9,7 +9,7 @@ namespace beeAppLibrary
 {
     public class Hive
     {
-        public static DateTime _dateOfCreation;
+        public static DateTime _dateOfCreation = DateTime.Now;
         private uint _stressLevel { get; set; }
         public const uint maxStressLevel = 100;
         public int NumberOfInhabitants { get => _inhabitants.Count(); private set => numberOfInhabitants = value; }

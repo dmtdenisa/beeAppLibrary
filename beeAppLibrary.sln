@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingBeeAppLib", "..\Test
 		{A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48} = {A0DBBA6B-D20C-422D-8AEA-190FEB5C7E48}
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeeApp", "..\BeeApp\BeeApp.csproj", "{4D7BC9D1-6E37-4CA9-99EA-253B7645449C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{13C0A6A3-CBFB-4F6A-9758-77CBBC8699AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13C0A6A3-CBFB-4F6A-9758-77CBBC8699AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13C0A6A3-CBFB-4F6A-9758-77CBBC8699AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7BC9D1-6E37-4CA9-99EA-253B7645449C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7BC9D1-6E37-4CA9-99EA-253B7645449C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7BC9D1-6E37-4CA9-99EA-253B7645449C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7BC9D1-6E37-4CA9-99EA-253B7645449C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
