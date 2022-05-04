@@ -96,5 +96,18 @@ namespace beeAppLibrary
             return output;
 
         }
+
+        public static bool operator >(HoneyBee bee1, HoneyBee bee2)
+        {
+            if (bee1.Age < bee2.Age)
+                return true;
+            else
+                return false;
+        }
+
+        public static bool operator <(HoneyBee bee1, HoneyBee bee2)
+        {
+            return bee1 > bee2;
+        }
     }
 }

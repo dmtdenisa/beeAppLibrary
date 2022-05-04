@@ -17,9 +17,16 @@ namespace beeAppLibrary
 
         public override string ToString()
         {
-            return base.ToString();
+            string output = "Bee colony inhabitants:\n";
+           foreach(HoneyBee bee in this)
+            {
+                output += $"{bee.ToString()}\n";
+            }
+            output += $"Maximum inhabitants: {maxBees}\nTotal inhabitants: {this.Count()}";
+            return output;
         }
 
+        
         
     }
 }
